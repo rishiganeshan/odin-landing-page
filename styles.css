@@ -14,28 +14,37 @@ body {
     margin: 0px;
 }
 
-.header {
+.header-section {
     display: flex;
     justify-content: space-between;
-    /* padding-left: 200px;
-    padding-right: 200px; */
     padding: 10px 100px;
 }
 
-.header-link-text {
+.header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header-links {
     display: flex;
     gap: 10px;
 }
 
-.image-placeholder2 {
-    width: 150px;
-    height: 150px;
-    border-color: #3882F6;
-    border-style: solid;
-    border-radius: 5px;
-    /* background-color: #1F2937; */
+
+
+.hero-section,
+.header-section {
+    background-color: #1F2937;
 
 }
+
+
+
+
+
+
+
+
 
 .hero-information {
     display: flex;
@@ -43,69 +52,8 @@ body {
     gap: 8px;
 }
 
-.header-information {
-    display: flex;
-    flex-direction: column;
-}
-.hero {
-    display: flex;
-}
-.image-with-caption {
-    display: flex;
-    flex-direction: column;
-    /* flex-shrink: 0; */
-    max-width: 150px;
-    text-align: center;
-    
-}
 
-.image-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    background-color: rgb(211, 211, 211);
-    color: white;
-    flex-basis: 400px;
-    flex-shrink: 0;
-}
-
-.image-row {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-    margin-bottom: 80px
-}
-
-.quote-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 320px;
-
-}
-.author {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 100px;
-    margin: 100px 200px;
-}
-
-
-.hero,
-.header {
-    background-color: #1F2937;
-
-}
-
-.hero {
+.hero-section {
     padding: 100px;
     display: flex;
     gap: 20px;
@@ -118,55 +66,52 @@ body {
     color: #F9FAF8;
     font-weight: 900;
 }
-.footer-text {
-    display: flex;
-    flex-direction: column;
-}
-.call-to-action {
-    font-weight: bold;
-    font-size: 20px;
-}
 
 .hero-secondary-text,
-.header-link-text {
+.header-links {
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.header-logo-text {
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-.footer,
-.sign-up-button {
-    background-color: #3882F6;
-    border-radius: 5px;
-    color: white;
-}
-
-.button1 {
+.hero-section .sign-up-button {
     border-color: #3882F6;
     border-style: solid;
     
 }
 
+
+.hero-section .image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgb(211, 211, 211);
+    color: white;
+    flex-basis: 400px;
+    flex-shrink: 0;
+}
+
+
 .sign-up-button {
     width: 100px;
     padding:3px 20px;
     font-weight: bolder;
-
-
+    background-color: #3882F6;
+    border-radius: 5px;
+    color: white;
 
 }
 
-.button2 {
-    border-color: white;
-    border-style: solid;
-    
-}
 
-.information-header-text {
+
+
+
+
+
+
+
+
+.information-header {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
@@ -176,9 +121,59 @@ body {
     align-items: center;
 }
 
-.quote-section {
-    background-color: #E5E7EB;
+
+.image-row .image-placeholder {
+    width: 150px;
+    height: 150px;
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 5px;
+
 }
+
+
+.image-with-caption {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    text-align: center;
+    
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 80px
+}
+
+
+
+
+
+
+
+
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 320px;
+    background-color: #E5E7EB;
+
+
+}
+.author {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+
 
 .quote {
     font-size: 36px;
@@ -187,8 +182,39 @@ body {
     color: #1F2937;
 }
 
-.author {
+
+
+
+
+
+
+
+
+.call-to-action-section {
     display: flex;
-    align-self: flex-end;
-    font-weight: bold;
+    justify-content: space-between;
+    padding: 50px 100px;
+    margin: 100px 200px;
+    background-color: #3882F6;
+    border-radius: 5px;
+    color: white;
 }
+
+.call-to-action-text {
+    display: flex;
+    flex-direction: column;
+}
+.call-to-action-header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.call-to-action-section .sign-up-button {
+    border-color: white;
+    border-style: solid;
+    
+}
+
+
+
