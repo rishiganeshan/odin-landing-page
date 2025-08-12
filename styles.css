@@ -11,6 +11,7 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 .header {
@@ -18,8 +19,23 @@ body {
     justify-content: space-between;
     /* padding-left: 200px;
     padding-right: 200px; */
-    padding: 10px 200px;
+    padding: 10px 100px;
+}
 
+.image-placeholder2 {
+    width: 150px;
+    height: 150px;
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 5px;
+    /* background-color: #1F2937; */
+
+}
+
+.hero-information {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 .header-link-text {
     display: flex;
@@ -35,23 +51,42 @@ body {
 .image-with-caption {
     display: flex;
     flex-direction: column;
+    /* flex-shrink: 0; */
+    max-width: 150px;
+    text-align: center;
+    
+}
+
+.image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgb(211, 211, 211);
+    color: white;
+    flex-basis: 400px;
+    flex-shrink: 0;
 }
 
 .image-row {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 80px
 }
 
 .quote-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 100px 320px;
 
 }
 .author {
     display: flex;
     justify-content: flex-end;
+    flex-grow: 1;
 }
 
 .footer {
@@ -68,7 +103,11 @@ body {
 }
 
 .hero {
-    padding: 200px
+    padding: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
 }
 
 .hero-main-text {
@@ -95,21 +134,52 @@ body {
 .footer,
 .sign-up-button {
     background-color: #3882F6;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    padding:3px 20px;
+}
+
+.button1 {
+    border-color: #3882F6;
+    border-style: solid;
+    
+}
+
+.sign-up-button {
+    width: 100px;
+
+}
+
+.button2 {
+    border-color: white;
+    border-style: solid;
+    
 }
 
 .information-header-text {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
 }
 
 .quote-section {
     background-color: #E5E7EB;
 }
 
-.quote-text {
+.quote {
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
     color: #1F2937;
+}
+
+.author {
+    display: flex;
+    align-self: flex-end;
+    font-weight: bold;
 }
