@@ -22,6 +22,11 @@ body {
     padding: 10px 100px;
 }
 
+.header-link-text {
+    display: flex;
+    gap: 10px;
+}
+
 .image-placeholder2 {
     width: 150px;
     height: 150px;
@@ -37,10 +42,7 @@ body {
     flex-direction: column;
     gap: 8px;
 }
-.header-link-text {
-    display: flex;
-    gap: 10px;
-}
+
 .header-information {
     display: flex;
     flex-direction: column;
@@ -92,7 +94,8 @@ body {
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 100px;
+    padding: 50px 100px;
+    margin: 100px 200px;
 }
 
 
@@ -119,6 +122,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+.call-to-action {
+    font-weight: bold;
+    font-size: 20px;
+}
 
 .hero-secondary-text,
 .header-link-text {
@@ -136,8 +143,6 @@ body {
     background-color: #3882F6;
     border-radius: 5px;
     color: white;
-    font-weight: bolder;
-    padding:3px 20px;
 }
 
 .button1 {
@@ -148,6 +153,10 @@ body {
 
 .sign-up-button {
     width: 100px;
+    padding:3px 20px;
+    font-weight: bolder;
+
+
 
 }
 
